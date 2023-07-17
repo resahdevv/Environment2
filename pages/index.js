@@ -29,7 +29,7 @@ export default function Home() {
         <div>
           <FontAwesomeIcon icon={faRobot} className="text-emerald-200 text-6xl mb-2" />
         </div>
-        <h1 className="text-4xl font-bold">Welcome to Amelia Ai 💜</h1>
+        <h1 className="text-4xl font-bold">Welcome to Amelia Ai</h1>
         <p className="text-lg mt-2">Login with your account to continue</p>
         <div className="mt-4 flex justify-center gap-3">
           {!user && (
