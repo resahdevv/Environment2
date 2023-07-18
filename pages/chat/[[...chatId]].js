@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
 import { v4 as uuid } from "uuid";
 
 export default function ChatPage({ chatId, title, messages = [] }) {
-  console.log("props: ", title, messages);
+  // console.log("props: ", title, messages);
   const [newChatId, setNewChatId] = useState(null);
   const [incomingMessage, setIncomingMessage] = useState("");
   const [messageText, setMessageText] = useState("");
@@ -93,7 +93,7 @@ export default function ChatPage({ chatId, title, messages = [] }) {
     const reader = data.getReader();
     let content = "";
     await streamReader(reader, (message) => {
-      console.log("MESSAGE: ", message);
+      // console.log("MESSAGE: ", message);
       if (message.event === "newChatId") {
         setNewChatId(message.content);
       } else {
