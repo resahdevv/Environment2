@@ -11,7 +11,7 @@ export const config = {
     runtime: "edge",
 };
 export default async function handler(req) {
-    console.log("IN HERE!");
+    // console.log("IN HERE!");
     try {
         const { chatId: chatIdFromParam, message } = await req.json();
 
